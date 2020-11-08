@@ -50,7 +50,6 @@ def extract_peer(encrypt_str: str):
         return None, None
 
 
-
 @routes.get(r'')
 async def index(req: web.Request) -> web.Response:
     if show_index:
@@ -74,6 +73,7 @@ async def favicon(req: web.Request) -> web.Response:
 async def handle_head_request(req: web.Request) -> web.Response:
     return await handle_request(req, head=True)
 
+
 @routes.get(r'/{id:\S+}/{name}')
 async def handle_get_request(req: web.Request) -> web.Response:
     return await handle_request(req, head=False)
@@ -87,7 +87,7 @@ async def get_id(req: web.Request) -> web.Response:
 @routes.delete(r'/{id:\S+}')
 async def delete_image(req: web.Request) -> web.Response:
     file_id = str(req.match_info['id'])
-    check_key = req.headers.get('WEB_AP_KEY')
+    check_key = req.headers.get('WEB_API_KEY')
     if check_key is None or check_key != web_api_key:
         return web.Response(status=401, text='<h3>401 Not Allowed</h3>', content_type='text/html')
     peer, msg_id = extract_peer(file_id)
