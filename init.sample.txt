@@ -1,6 +1,6 @@
 #!/bin/bash
 #rm -rf app
-git clone https://github.com/kuyagic/tgfilestream app
+git clone https://github.com/chwl66/tgfilestream app
 pip install -r app/requirements.txt
 TG_API_ID=<TG_APP_ID> \
 TG_API_HASH=<TG_APP_KEY> \
