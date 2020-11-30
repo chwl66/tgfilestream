@@ -1,4 +1,4 @@
-# tgfilestream - A Telegram bot that can stream Telegram files to users over HTTP.
+# tgpic - A Telegram bot that can stream Telegram files to users over HTTP.
 # Copyright (C) 2019 Tulir Asokan
 #
 # This program is free software: you can redistribute it and/or modify
@@ -19,10 +19,10 @@ import sys
 from aiohttp import web
 from telethon import functions
 
-from tgfilestream.config import host, port, allowed_user, bot_token, link_prefix
-from tgfilestream.log import log
-from tgfilestream.telegram import client, transfer
-from tgfilestream.web_routes import routes
+from tgpic.config import host, port, allowed_user, bot_token, link_prefix
+from tgpic.log import log
+from tgpic.telegram import client, transfer
+from tgpic.web_routes import routes
 
 server = web.Application()
 server.add_routes(routes)

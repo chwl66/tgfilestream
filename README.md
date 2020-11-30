@@ -1,4 +1,4 @@
-# tgfilestream
+# tgpic
 A Telegram bot that can stream Telegram files to users over HTTP.
 
 ## 安装流程
