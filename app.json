@@ -9,9 +9,9 @@
     "productivity",
     "Telegram api"
   ],
-  "repository": "https://github.com/kuyagic/tgfilestream",
-  "success_url": "https://github.com/kuyagic/tgfilestream",
-  "website": "https://github.com/kuyagic/tgfilestream",
+  "repository": "https://github.com/chwl66/tgfilestream",
+  "success_url": "https://github.com/chwl66/tgfilestream",
+  "website": "https://github.com/chwl66/tgfilestream",
   "env": {
     "ADMIN_ID": {
       "description": "管理员ID,不受任何限制私聊",
