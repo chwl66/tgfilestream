@@ -1,6 +1,6 @@
 # tgpic
 A Telegram bot that can stream Telegram files to users over HTTP.
-部署到heroku的，要是出现heroku取消的情况，请批量修改'tgpic'以后再进行部署！
+部署到heroku的，要是出现heroku取消的情况，请批量修改`tgpic`以后再进行部署！
 
 ## 安装流程
 - 使用 `pip3 install -r requirements.txt` 安装依赖, 
